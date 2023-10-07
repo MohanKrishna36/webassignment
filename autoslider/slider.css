@@ -7,8 +7,8 @@
 .slides {
     position: relative;  
     /* height: 50vh; */
-    width: 80vw;
-    height: 70vh;
+    width: 50vw;
+    height: 50vh;
     margin: auto;
 }
 
@@ -100,7 +100,7 @@ h3 {
 .containerh {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   margin: 0 auto;
   max-width: 800px;
   border: 1px solid #ccc;
@@ -149,10 +149,11 @@ h3 {
 }
 
 footer {
-  background-color: #34495e;
-  color: white;
+  /* background-color: #34495e; */
+  /* color: white; */
+  border-top: 1px dotted black;
   text-align: center;
-  padding: 10px;
+  padding: 3px;
   font-size: 16px;
   border-radius: 0 0 10px 10px;
   width: 100%;
