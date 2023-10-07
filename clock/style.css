@@ -43,14 +43,6 @@
   opacity: 0.8;
 }
 
-.header {
-  background-color: #34495e;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 28px;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -69,6 +61,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  border-bottom: 1px dotted black;
 }
 
 .left-container {
@@ -99,17 +92,6 @@
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-}
-
-.assignment-header {
-  background-color: #3498db;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-size: 22px;
-  margin-top: 20px;
-  border-radius: 5px;
-  width: 100%;
 }
 
 footer {
