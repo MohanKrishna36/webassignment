@@ -37,9 +37,88 @@
         color: red;
         cursor: pointer;
       }
+
+      .containerh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.name-containerh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted black;
+}
+
+.left-containerh {
+  flex: 1;
+}
+
+.right-containerh {
+  flex: 1;
+  text-align: right;
+}
+
+
+.hname {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.hreg-no,
+.slot {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+}
     </style>
   </head>
   <body>
+
+    <div class="containerh">
+      <div class="name-containerh">
+        <div class="left-containerh">
+          <div class="hname">ARURU MOHAN KRISHNA</div><br>
+          <div class="hreg-no">
+            Registration number: <span class="bold">21MIS7128</span>
+          </div>
+          <div class="slot">
+            Slot: <span class="bold">F2+TF2</span>
+          </div>
+        </div>
+
+        <div class="right-containerh">
+          <img src="amk1.jpg" alt="my profile" class="avatar" />
+        </div>
+      </div>
+<br>
     <div class="navbar">
       <ul class="list">
         <li class="item"><a href="#" class="link">Home</a></li>
@@ -53,5 +132,13 @@
         placeholder="Search this website"
       />
     </div>
+    <br>
+    <br>
+
+    <footer>
+      <p>Email: mohan.21mis7128@vitapstudent.ac.in</p>
+      <p>Contact: 6304719019</p>
+    </footer>
+
   </body>
 </html>
