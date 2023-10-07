@@ -4,112 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>  
-      body {
-        margin: 10px;
-      }
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      .main-container {
-        border: 1px solid black;
-        background-color: black;
-      }
-
-      .container {
+    <style>
+      .grid-container {
         display: grid;
-        grid-gap: 20px;
-        margin: 20px;
-        /* padding: 50px; */
-        text-align: center;
+        grid-auto-flow: column;
+        /* grid-gap: 10px; */
         grid-template-areas:
-          "one one  four four five six"
-          "one one  four four five six"
-          "two three  four four five seven"
-          "two three  four four five seven"
-          "eight nine  nine ten ten eleven"
-          "eight nine  nine ten ten eleven";
-        background-color: white;
-        padding: 10px;
-
-        /* height: 400px; */
-        height: 90vh;
+          "navbar  navbar navbar navbar navbar"
+          "sidebar  sidebar main main main"
+          "sidebar  sidebar main main main"
+          "sidebar  sidebar main main main"
+          "sidebar  sidebar main main main"
+          "sidebar  sidebar main main main"
+          "sidebar  sidebar content-1 content-2 content-3"
+          "sidebar  sidebar content-1 content-2 content-3"
+          "sidebar  sidebar content-1 content-2 content-3"
+          "sidebar  sidebar content-1 content-2 content-3"
+          "sidebar  sidebar content-1 content-2 content-3"
+          "sidebar  sidebar footer footer footer";
+        text-align: center;
+        height: 100vh;
       }
 
       .item {
         padding: 10px;
-        border: 1px solid black;
+        border: 1px solid #ccc;
       }
 
-      #one {
-        grid-area: one;
+      #navbar {
+        grid-area: navbar;
+
+        background-color: wheat;
       }
 
-      #two {
-        grid-area: two;
+      #main {
+        grid-area: main;
+
+        background-color: skyblue;
       }
 
-      #three {
-        grid-area: three;
+      #sidebar {
+        grid-area: sidebar;
+
+        background-color: lightsalmon;
       }
 
-      #four {
-        grid-area: four;
+      #content-1 {
+        grid-area: content-1;
+        background-color: lightyellow;
       }
 
-      #five {
-        grid-area: five;
+      #content-2 {
+        grid-area: content-2;
+        background-color: lightyellow;
       }
 
-      #six {
-        grid-area: six;
+      #content-3 {
+        grid-area: content-3;
+        background-color: lightyellow;
       }
 
-      #seven {
-        grid-area: seven;
-      }
+      #footer {
+        grid-area: footer;
 
-      #eight {
-        grid-area: eight;
+        background-color: lightgreen;
       }
-
-      #nine {
-        grid-area: nine;
-      }
-
-      #ten {
-        grid-area: ten;
-      }
-
-      #eleven {
-        grid-area: eleven;
-      }
-
-      /* .colored-container {
-            border: 3px solid black;
-        } */
     </style>
   </head>
-
   <body>
-    <div class="main-container">
-      <div class="container">
-        <div class="item" id="one">1</div>
-        <div class="item" id="two">2</div>
-        <div class="item" id="three">3</div>
-        <div class="item" id="four">4</div>
-        <div class="item" id="five">5</div>
-        <div class="item" id="six">6</div>
-        <div class="item" id="seven">7</div>
-        <div class="item" id="eight">8</div>
-        <div class="item" id="nine">9</div>
-        <div class="item" id="ten">10</div>
-        <div class="item" id="eleven">11</div>
-      </div>
+    <div class="grid-container">
+      <div class="item" id="navbar">NAVBAR</div>
+      <div class="item" id="sidebar">SIDEBAR</div>
+      <div class="item" id="main">MAIN</div>
+      <div class="item" id="content-1">CONTENT-1</div>
+      <div class="item" id="content-2">CONTENT-2</div>
+      <div class="item" id="content-3">CONTENT-3</div>
+      <div class="item" id="footer">FOOTER</div>
     </div>
-
   </body>
 </html>
